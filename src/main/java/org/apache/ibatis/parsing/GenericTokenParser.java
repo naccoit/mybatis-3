@@ -30,6 +30,12 @@ public class GenericTokenParser {
     this.handler = handler;
   }
 
+
+  /**
+   * 解析sql "#{} 或 ${}"
+   * @param text
+   * @return
+   */
   public String parse(String text) {
     if (text == null || text.isEmpty()) {
       return "";
